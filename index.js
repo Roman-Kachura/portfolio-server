@@ -6,7 +6,9 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://roman-kachura.github.io/roman-kachura-portfolio'
+}));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
